@@ -3,7 +3,6 @@ package com.messageprocessingapp.repository;
 import com.messageprocessingapp.interfaces.IMessageRepository;
 import com.messageprocessingapp.models.Message;
 import com.messageprocessingapp.models.MessageType;
-import com.messageprocessingapp.utils.DBConn;
 import com.messageprocessingapp.utils.DBConnPool;
 import com.messageprocessingapp.utils.MessageDistribution;
 
@@ -50,8 +49,15 @@ public class MessageRepository implements IMessageRepository {
     }
 
     @Override
-    public boolean deleteMessage(int messageId) {
-        return false;
+    public boolean deleteMessage(String tableName, int messageId) {
+        try(Connection conn = DBConnPool.getDataSource().getConnection()){
+            String sql = "delete from " + tableName + " where message_id = " + messageId;
+            Statement st = conn.createStatement();
+            int result = st.executeUpdate(sql);
+            return result > 0;
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -116,4 +122,63 @@ public class MessageRepository implements IMessageRepository {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public Message getRowsFromTable(String tableName) {
+        try(Connection conn = DBConnPool.getDataSource().getConnection()){
+            String sql = "select * from " + tableName + " limit 1";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            Message message = new Message();
+            if(rs.next()){
+                message.setMessage_id(rs.getInt("message_id"));
+                message.setMessage_content(rs.getString("message_content"));
+                message.setMessage_type(rs.getString("message_type"));
+                message.setPriority(rs.getString("priority"));
+                message.setUser_id(rs.getInt("user_id"));
+                message.setPosted_at(rs.getTimestamp("posted_at"));
+            }
+            return message;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public boolean checkIfTableIsNotEmpty(String subtable) {
+        try(Connection conn = DBConnPool.getDataSource().getConnection()){
+            String sql = "select count(message_id) as count_of_messages from " + subtable;
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            int rowCount = 0;
+            if(rs.next()){
+                rowCount = rs.getInt("count_of_messages");
+            }
+            return rowCount > 0;
+        }catch(SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public Message getOldestMessage(String tableName) {
+        try(Connection conn = DBConnPool.getDataSource().getConnection()){
+            String sql = "select * from " + tableName + " limit 1";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            Message m = new Message();
+            while(rs.next()){
+                m.setMessage_id(rs.getInt("message_id"));
+                m.setMessage_content(rs.getString("message_content"));
+                m.setMessage_type(rs.getString("message_type"));
+                m.setPriority(rs.getString("priority"));
+                m.setUser_id(rs.getInt("user_id"));
+                m.setPosted_at(rs.getTimestamp("posted_at"));
+            }
+            return m;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

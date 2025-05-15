@@ -1,11 +1,22 @@
 package com.messageprocessingapp.models;
 
+import java.sql.Timestamp;
+
 public class Message {
     private int message_id;
     private String message_content;
     private String message_type;
     private String priority;
-    private String posted_at;
+    private Timestamp posted_at;
+    private int user_id;
+
+    public Timestamp getPosted_at() {
+        return posted_at;
+    }
+
+    public void setPosted_at(Timestamp posted_at) {
+        this.posted_at = posted_at;
+    }
 
     public int getUser_id() {
         return user_id;
@@ -15,7 +26,6 @@ public class Message {
         this.user_id = user_id;
     }
 
-    private int user_id;
 
     public int getMessage_id() {
         return message_id;
@@ -49,11 +59,4 @@ public class Message {
         this.priority = priority;
     }
 
-    public String getPosted_at() {
-        return posted_at;
-    }
-
-    public void setPosted_at(String posted_at) {
-        this.posted_at = posted_at;
-    }
 }

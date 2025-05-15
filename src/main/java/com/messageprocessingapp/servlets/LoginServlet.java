@@ -6,6 +6,7 @@ import com.messageprocessingapp.interfaces.IUserRepository;
 import com.messageprocessingapp.models.User;
 import com.messageprocessingapp.repository.UserRepository;
 import com.messageprocessingapp.utils.PasswordHasher;
+import com.messageprocessingapp.utils.ThreadsCreator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,6 +21,10 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        ThreadsCreator tc = new ThreadsCreator();
+        tc.startThreads();
+        
         String contentType = req.getContentType();
 
         if(contentType != null && contentType.equals("application/json")){

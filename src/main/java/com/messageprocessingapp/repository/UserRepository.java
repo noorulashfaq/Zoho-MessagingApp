@@ -1,9 +1,7 @@
 package com.messageprocessingapp.repository;
 
-import com.messageprocessingapp.exceptions.UserAlreadyExistsException;
 import com.messageprocessingapp.interfaces.IUserRepository;
 import com.messageprocessingapp.models.User;
-import com.messageprocessingapp.utils.DBConn;
 import com.messageprocessingapp.utils.DBConnPool;
 import com.messageprocessingapp.utils.PasswordHasher;
 
@@ -30,7 +28,7 @@ public class UserRepository implements IUserRepository {
                 loggedUser.setPassword_hash(rs.getString("password_hash"));
             }
 
-            if(PasswordHasher.checkPass(password, loggedUser.getPassword_hash())){
+            if(!PasswordHasher.checkPass(password, loggedUser.getPassword_hash())){
                 throw new RuntimeException("Invalid credentials");
             }
 
