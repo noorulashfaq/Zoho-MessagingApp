@@ -2,7 +2,6 @@ package com.messageprocessingapp.servlets;
 
 import com.google.gson.JsonObject;
 //import com.messageprocessingapp.utils.QueueMessageProcessing;
-import com.messageprocessingapp.utils.ThreadsCreator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,8 +15,8 @@ public class QueueMessageProcessingServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
 //            new QueueMessageProcessing().assignThreadsToTables();
-            ThreadsCreator tc = new ThreadsCreator();
-            tc.startThreads();
+//            ThreadsCreator tc = new ThreadsCreator();
+//            tc.startThreads();
             resp.setContentType("application/json");
             resp.setCharacterEncoding("UTF-8");
             PrintWriter out = resp.getWriter();

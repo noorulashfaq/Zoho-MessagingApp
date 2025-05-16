@@ -26,10 +26,25 @@ create table T_two_TB_two(
 	user_id int references users(user_id) on delete set null,
 	posted_at timestamp default current_timestamp
 );
+create table T_two_TB_two(
+	message_id serial primary key,
+	message_content bytea[],
+	message_type varchar(10),
+	priority varchar(5),
+	user_id int references users(user_id) on delete set null,
+	posted_at timestamp default current_timestamp
+);
+
+alter table T_one_TB_three
+alter column message_content type TEXT;
 
 alter table messageprocess
-alter column thread_id type varchar(20);
+drop column p_id;
+
 select * from messageprocess;
+select * from users;
+
+drop table T_two_TB_one;
 
 select * from T_two_TB_one;
 select * from T_two_TB_two;
@@ -37,4 +52,7 @@ select * from T_one_TB_one;
 select * from T_one_TB_two;
 select * from T_one_TB_three;
 
-truncate table T_one_TB_one;
+select * from TypeOne;
+select * from TypeTwo;
+
+truncate table messageprocess;

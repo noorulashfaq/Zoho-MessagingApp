@@ -21,7 +21,7 @@
     
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/api/login</url-pattern>
+        <url-pattern>api/login</url-pattern>
     </servlet-mapping>
     
     <servlet>
@@ -31,7 +31,7 @@
     
     <servlet-mapping>
         <servlet-name>MessageServlet</servlet-name>
-        <url-pattern>/api/messages</url-pattern>
+        <url-pattern>api/messages</url-pattern>
     </servlet-mapping>
     
     <servlet>
@@ -41,6 +41,6 @@
     
     <servlet-mapping>
         <servlet-name>QueueMessageProcessing</servlet-name>
-        <url-pattern>/api/process</url-pattern>
+        <url-pattern>api/process</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -3,7 +3,7 @@ package com.messageprocessingapp.models;
 import java.sql.Timestamp;
 
 public class MessageProcess {
-    private int p_id;
+//    private int p_id;
     private String thread_id;
     private int user_id;
     private String message_content;
@@ -12,13 +12,13 @@ public class MessageProcess {
     private String priority;
     private Timestamp posted_at;
 
-    public int getP_id() {
-        return p_id;
-    }
-
-    public void setP_id(int p_id) {
-        this.p_id = p_id;
-    }
+//    public int getP_id() {
+//        return p_id;
+//    }
+//
+//    public void setP_id(int p_id) {
+//        this.p_id = p_id;
+//    }
 
     public String getThread_id() {
         return thread_id;

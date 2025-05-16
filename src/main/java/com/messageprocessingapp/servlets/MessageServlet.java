@@ -5,6 +5,8 @@ import com.google.gson.JsonObject;
 import com.messageprocessingapp.interfaces.IMessageRepository;
 import com.messageprocessingapp.models.Message;
 import com.messageprocessingapp.repository.MessageRepository;
+import com.messageprocessingapp.utils.MessageEncoder;
+import com.messageprocessingapp.utils.QueueMessageProcessing;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -27,7 +29,7 @@ public class MessageServlet extends HttpServlet {
 
             Message msg = new Message();
 
-            msg.setMessage_content(body.get("message_content").getAsString());
+            msg.setMessage_content(MessageEncoder.encode(body.get("message_content").getAsString()));
             msg.setMessage_type(body.get("message_type").getAsString());
             msg.setPriority(body.get("priority").getAsString());
             msg.setUser_id(body.get("user_id").getAsInt());
