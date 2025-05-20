@@ -35,11 +35,14 @@ create table T_two_TB_two(
 	posted_at timestamp default current_timestamp
 );
 
-alter table T_one_TB_three
-alter column message_content type TEXT;
+alter table T_two_TB_two
+add column status boolean;
 
 alter table messageprocess
-drop column p_id;
+add constraint pk_messageprocess primary key(thread_id, user_id, message_id);
+
+alter table messageprocess
+add column message_id int;
 
 select * from messageprocess;
 select * from users;
@@ -55,4 +58,13 @@ select * from T_one_TB_three;
 select * from TypeOne;
 select * from TypeTwo;
 
+------------------------------------------------
+
+truncate table T_two_TB_one;
+truncate table T_two_TB_two;
+truncate table T_one_TB_one;
+truncate table T_one_TB_two;
+truncate table T_one_TB_three;
+
 truncate table messageprocess;
+

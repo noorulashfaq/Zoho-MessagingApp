@@ -4,7 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.messageprocessingapp.interfaces.IMessageRepository;
 import com.messageprocessingapp.models.Message;
+import com.messageprocessingapp.models.MessageResponse;
 import com.messageprocessingapp.repository.MessageRepository;
+import com.messageprocessingapp.utils.AppLogger;
 import com.messageprocessingapp.utils.MessageEncoder;
 import com.messageprocessingapp.utils.QueueMessageProcessing;
 
@@ -41,11 +43,14 @@ public class MessageServlet extends HttpServlet {
             resp.setCharacterEncoding("UTF-8");
 
             try{
-                boolean result = messageRepository.addMessage(msg);
-                if(result){
+                MessageResponse result = messageRepository.addMessage(msg);
+                if(result.getMessage_id() > 0){
                     resp.setStatus(HttpServletResponse.SC_CREATED);
-                    jsonObject.addProperty("success", "New message posted");
-                    out.print(jsonObject);
+//                    jsonObject.addProperty("success", "New message posted");
+                    AppLogger.logger.info("Message with id " + result.getMessage_id() + " from user" + result.getUser_id() + " was added to " + result.getSub_table_name());
+                    String json = new Gson().toJson(result);
+                    out.println(json);
+                    out.flush();
                 }
             } catch (RuntimeException e) {
                 resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

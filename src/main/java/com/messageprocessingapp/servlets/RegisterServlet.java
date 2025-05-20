@@ -4,8 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.messageprocessingapp.exceptions.UserAlreadyExistsException;
 import com.messageprocessingapp.interfaces.IUserRepository;
-import com.messageprocessingapp.models.User;
 import com.messageprocessingapp.repository.UserRepository;
+import com.messageprocessingapp.utils.AppLogger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -43,6 +43,7 @@ public class RegisterServlet extends HttpServlet {
 
                 if (result) {
                     resp.setStatus(HttpServletResponse.SC_CREATED);
+                    AppLogger.logger.info("User " + username + " created");
                     jsonObject.addProperty("success", "New user created");
                 } else {
                     throw new RuntimeException();

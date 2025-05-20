@@ -11,7 +11,7 @@
     
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>/api/register</url-pattern>
+        <url-pattern>api/register</url-pattern>
     </servlet-mapping>
     
     <servlet>
@@ -28,19 +28,20 @@
         <servlet-name>MessageServlet</servlet-name>
         <servlet-class>com.messageprocessingapp.servlets.MessageServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>MessageServlet</servlet-name>
         <url-pattern>api/messages</url-pattern>
     </servlet-mapping>
     
     <servlet>
-        <servlet-name>QueueMessageProcessing</servlet-name>
-        <servlet-class>com.messageprocessingapp.servlets.QueueMessageProcessingServlet</servlet-class>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.messageprocessingapp.servlets.LogoutServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>QueueMessageProcessing</servlet-name>
-        <url-pattern>api/process</url-pattern>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>api/logout</url-pattern>
     </servlet-mapping>
+
 </web-app>

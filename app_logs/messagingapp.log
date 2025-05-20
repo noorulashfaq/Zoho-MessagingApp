@@ -1,0 +1,262 @@
+May 19, 2025 10:48:29 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 44 in table T_one_TB_three
+May 19, 2025 10:48:29 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 44 in T_one_TB_three has been processed
+May 19, 2025 10:48:39 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 45 in table T_one_TB_three
+May 19, 2025 10:48:39 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 45 in T_one_TB_three has been processed
+May 19, 2025 10:53:39 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 62 from user2 was added to T_two_TB_one
+May 19, 2025 10:53:49 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 62 in table T_two_TB_one
+May 19, 2025 10:53:49 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 62 in T_two_TB_one has been processed
+May 19, 2025 10:54:20 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 19 from user5 was added to T_two_TB_two
+May 19, 2025 10:54:30 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 19 in table T_two_TB_two
+May 19, 2025 10:54:30 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 19 in T_two_TB_two has been processed
+May 19, 2025 10:57:35 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 63 from user2 was added to T_two_TB_one
+May 19, 2025 10:57:45 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 63 in table T_two_TB_one
+May 19, 2025 10:57:45 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 63 in T_two_TB_one has been processed
+May 19, 2025 10:59:21 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 20 from user3 was added to T_two_TB_two
+May 19, 2025 11:03:36 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 20 in table T_two_TB_two
+May 19, 2025 11:03:36 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 20 in T_two_TB_two processing failed
+May 19, 2025 11:04:13 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 21 from user3 was added to T_two_TB_two
+May 19, 2025 11:04:26 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 46 from user1 was added to T_one_TB_three
+May 19, 2025 11:04:36 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 46 in table T_one_TB_three
+May 19, 2025 11:04:36 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 46 in T_one_TB_three has been processed
+May 19, 2025 11:04:36 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 61 from user3 was added to T_one_TB_one
+May 19, 2025 11:04:46 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_one is working on 61 in table T_one_TB_one
+May 19, 2025 11:04:46 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 61 in T_one_TB_one has been processed
+May 19, 2025 11:05:21 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 126 from user5 was added to T_one_TB_two
+May 19, 2025 11:05:31 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 126 in table T_one_TB_two
+May 19, 2025 11:05:31 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 126 in T_one_TB_two has been processed
+May 19, 2025 11:07:39 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 22 from user1 was added to T_two_TB_two
+May 19, 2025 11:07:49 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 64 from user2 was added to T_two_TB_one
+May 19, 2025 11:07:59 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 64 in table T_two_TB_one
+May 19, 2025 11:07:59 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 64 in T_two_TB_one has been processed
+May 19, 2025 11:08:04 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 65 from user6 was added to T_two_TB_one
+May 19, 2025 11:08:14 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 65 in table T_two_TB_one
+May 19, 2025 11:08:14 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 65 in T_two_TB_one has been processed
+May 19, 2025 11:10:57 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 66 from user6 was added to T_two_TB_one
+May 19, 2025 11:11:07 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 66 in table T_two_TB_one
+May 19, 2025 11:11:07 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 66 in T_two_TB_one has been processed
+May 19, 2025 11:11:10 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 67 from user2 was added to T_two_TB_one
+May 19, 2025 11:11:20 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 67 in table T_two_TB_one
+May 19, 2025 11:11:20 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 67 in T_two_TB_one has been processed
+May 19, 2025 11:11:24 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 62 from user3 was added to T_one_TB_one
+May 19, 2025 11:11:28 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 127 from user2 was added to T_one_TB_two
+May 19, 2025 11:11:30 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 47 from user1 was added to T_one_TB_three
+May 19, 2025 11:11:35 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_one is working on 62 in table T_one_TB_one
+May 19, 2025 11:11:35 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 62 in T_one_TB_one has been processed
+May 19, 2025 11:11:38 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 127 in table T_one_TB_two
+May 19, 2025 11:11:38 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 127 in T_one_TB_two has been processed
+May 19, 2025 11:11:39 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 23 from user1 was added to T_two_TB_two
+May 19, 2025 11:11:40 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 47 in table T_one_TB_three
+May 19, 2025 11:11:40 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 47 in T_one_TB_three has been processed
+May 19, 2025 11:11:49 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 23 in table T_two_TB_two
+May 19, 2025 11:11:49 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 23 in T_two_TB_two has been processed
+May 19, 2025 11:12:18 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 68 from user2 was added to T_two_TB_one
+May 19, 2025 11:12:28 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 68 in table T_two_TB_one
+May 19, 2025 11:12:28 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 68 in T_two_TB_one has been processed
+May 19, 2025 11:15:43 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 48 from user1 was added to T_one_TB_three
+May 19, 2025 11:15:53 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 48 in table T_one_TB_three
+May 19, 2025 11:15:53 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 48 in T_one_TB_three has been processed
+May 19, 2025 11:18:59 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 49 from user1 was added to T_one_TB_three
+May 19, 2025 11:19:09 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 49 in table T_one_TB_three
+May 19, 2025 11:19:09 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 49 in T_one_TB_three has been processed
+May 19, 2025 11:19:42 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 50 from user1 was added to T_one_TB_three
+May 19, 2025 11:19:52 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 50 in table T_one_TB_three
+May 19, 2025 11:19:52 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 50 in T_one_TB_three has been processed
+May 19, 2025 11:26:32 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 24 from user5 was added to T_two_TB_two
+May 19, 2025 11:26:42 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 24 in table T_two_TB_two
+May 19, 2025 11:26:42 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 24 in T_two_TB_two has been processed
+May 19, 2025 11:29:41 AM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Noor logged in
+May 19, 2025 11:52:19 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 25 from user3 was added to T_two_TB_two
+May 19, 2025 11:52:29 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 25 in table T_two_TB_two
+May 19, 2025 11:52:29 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 25 in T_two_TB_two has been processed
+May 19, 2025 11:53:35 AM com.messageprocessingapp.servlets.RegisterServlet doPost
+INFO: User Ram created
+May 19, 2025 11:53:48 AM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 11:54:04 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 128 from user8 was added to T_one_TB_two
+May 19, 2025 11:54:11 AM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 69 from user8 was added to T_two_TB_one
+May 19, 2025 11:54:14 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 128 in table T_one_TB_two
+May 19, 2025 11:54:14 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 128 in T_one_TB_two has been processed
+May 19, 2025 11:54:21 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 69 in table T_two_TB_one
+May 19, 2025 11:54:21 AM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 69 in T_two_TB_one has been processed
+May 19, 2025 4:12:05 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 4:12:35 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 4:46:24 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 4:50:00 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 70 from user8 was added to T_two_TB_one
+May 19, 2025 4:50:02 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 63 from user3 was added to T_one_TB_one
+May 19, 2025 4:50:03 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 129 from user5 was added to T_one_TB_two
+May 19, 2025 4:50:04 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 26 from user5 was added to T_two_TB_two
+May 19, 2025 4:50:05 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 130 from user2 was added to T_one_TB_two
+May 19, 2025 4:50:10 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 70 in table T_two_TB_one
+May 19, 2025 4:50:10 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 70 in T_two_TB_one has been processed
+May 19, 2025 4:50:12 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_one is working on 63 in table T_one_TB_one
+May 19, 2025 4:50:12 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 63 in T_one_TB_one has been processed
+May 19, 2025 4:50:13 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 129 in table T_one_TB_two
+May 19, 2025 4:50:13 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 129 in T_one_TB_two has been processed
+May 19, 2025 4:50:14 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 26 in table T_two_TB_two
+May 19, 2025 4:50:14 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 26 in T_two_TB_two has been processed
+May 19, 2025 4:50:23 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 130 in table T_one_TB_two
+May 19, 2025 4:50:23 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 130 in T_one_TB_two has been processed
+May 19, 2025 4:50:42 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 71 from user8 was added to T_two_TB_one
+May 19, 2025 4:50:43 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 72 from user8 was added to T_two_TB_one
+May 19, 2025 4:50:43 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 73 from user8 was added to T_two_TB_one
+May 19, 2025 4:50:52 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 71 in table T_two_TB_one
+May 19, 2025 4:50:52 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 71 in T_two_TB_one has been processed
+May 19, 2025 4:51:02 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 72 in table T_two_TB_one
+May 19, 2025 4:51:02 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 72 in T_two_TB_one has been processed
+May 19, 2025 4:51:12 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 73 in table T_two_TB_one
+May 19, 2025 4:51:12 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 73 in T_two_TB_one has been processed
+May 19, 2025 5:06:03 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 74 from user8 was added to T_two_TB_one
+May 19, 2025 5:06:04 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 64 from user3 was added to T_one_TB_one
+May 19, 2025 5:06:05 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 131 from user5 was added to T_one_TB_two
+May 19, 2025 5:06:06 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 27 from user5 was added to T_two_TB_two
+May 19, 2025 5:06:07 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 132 from user2 was added to T_one_TB_two
+May 19, 2025 5:06:13 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_one is working on 74 in table T_two_TB_one
+May 19, 2025 5:06:13 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 74 in T_two_TB_one has been processed
+May 19, 2025 5:06:14 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_one is working on 64 in table T_one_TB_one
+May 19, 2025 5:06:14 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 64 in T_one_TB_one has been processed
+May 19, 2025 5:06:15 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 131 in table T_one_TB_two
+May 19, 2025 5:06:15 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 131 in T_one_TB_two has been processed
+May 19, 2025 5:06:15 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 5:06:16 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_two_TB_two is working on 27 in table T_two_TB_two
+May 19, 2025 5:06:16 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 27 in T_two_TB_two has been processed
+May 19, 2025 5:06:25 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 132 in table T_one_TB_two
+May 19, 2025 5:06:25 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 132 in T_one_TB_two has been processed
+May 19, 2025 5:06:59 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 51 from user1 was added to T_one_TB_three
+May 19, 2025 5:07:09 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_three is working on 51 in table T_one_TB_three
+May 19, 2025 5:07:09 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 51 in T_one_TB_three has been processed
+May 19, 2025 5:13:30 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Ram logged in
+May 19, 2025 5:22:03 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Noor logged in
+May 19, 2025 5:22:40 PM com.messageprocessingapp.servlets.MessageServlet doPost
+INFO: Message with id 133 from user5 was added to T_one_TB_two
+May 19, 2025 5:22:50 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: T_one_TB_two is working on 133 in table T_one_TB_two
+May 19, 2025 5:22:50 PM com.messageprocessingapp.utils.QueueMessageProcessing run
+INFO: Message 133 in T_one_TB_two has been processed
+May 19, 2025 5:52:22 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Noor logged in
+May 19, 2025 5:58:30 PM com.messageprocessingapp.servlets.LoginServlet doPost
+INFO: Noor logged in

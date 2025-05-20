@@ -5,11 +5,13 @@ import com.google.gson.JsonObject;
 import com.messageprocessingapp.interfaces.IUserRepository;
 import com.messageprocessingapp.models.User;
 import com.messageprocessingapp.repository.UserRepository;
+import com.messageprocessingapp.utils.AppLogger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -45,7 +47,11 @@ public class LoginServlet extends HttpServlet {
                     return;
                 }
 
-                jsonObject.addProperty("success", "Successfully logged in");
+                AppLogger.logger.info(userName + " logged in");
+                HttpSession session = req.getSession();
+                session.setAttribute("userId", user.getUser_id());
+                session.setAttribute("userName", userName);
+//                jsonObject.addProperty("success", "Successfully logged in");
                 resp.setStatus(HttpServletResponse.SC_ACCEPTED);
 
                 String json = new Gson().toJson(user);
